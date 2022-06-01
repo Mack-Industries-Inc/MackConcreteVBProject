@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B44D343-13FF-4D26-BAE8-462CF94D6542}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MackConcrete</RootNamespace>
+    <AssemblyName>MackConcrete</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MackConcrete.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MackConcrete.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IDOBase">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\IDOBase.dll</HintPath>
+    </Reference>
+    <Reference Include="IDOCore">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\IDOCore.dll</HintPath>
+    </Reference>
+    <Reference Include="IDOProtocol">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\IDOProtocol.dll</HintPath>
+    </Reference>
+    <Reference Include="IDORequestClient">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\IDORequestClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MGCommonCtrl">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGCommonCtrl.dll</HintPath>
+    </Reference>
+    <Reference Include="MGConfig">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGConfig.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MGCoreExt">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGCoreExt.dll</HintPath>
+    </Reference>
+    <Reference Include="MGFileServer">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGFileServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MGForms">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MGScriptMgr">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGScriptMgr.dll</HintPath>
+    </Reference>
+    <Reference Include="MGShared">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\MGShared.dll</HintPath>
+    </Reference>
+    <Reference Include="Mongoose.Interop.IDO">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\Mongoose.Interop.IDO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Utils">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WSEnums">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\WSEnums.dll</HintPath>
+    </Reference>
+    <Reference Include="WSFormServerProtocol">
+      <HintPath>..\..\..\..\..\..\_Syteline\SL10\DLL\WSFormServerProtocol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ue_AgingBySalespersonReport.vb" />
+    <Compile Include="ue_Mack_AntiDeferredReport.vb" />
+    <Compile Include="ue_Mack_DeferredCostReport.vb" />
+    <Compile Include="ue_Mack_IntercompanyCOPricing.vb" />
+    <Compile Include="ue_Mack_ProductionBacklogReport.vb" />
+    <Compile Include="ue_Mack_ProjCommCalc.vb" />
+    <Compile Include="ue_Mack_SalesCommissionReport.vb" />
+    <Compile Include="ue_Mack_SLExecutives.vb" />
+    <Compile Include="ue_Mack_SLOrderInvoicingCreditMemoReprintReport.vb" />
+    <Compile Include="ue_Mack_SLProjectMarginAnalysisReport.vb" />
+    <Compile Include="ue_SLAccountsReceivableAgingReport.vb" />
+    <Compile Include="ue_SLJobTransactionsReport.vb" />
+    <Compile Include="ue_SLOrderShippedCostReport.vb" />
+    <Compile Include="ue_YardReport.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
